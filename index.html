@@ -1,0 +1,69 @@
+﻿<!DOCTYPE html>
+
+<html lang="ja" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta name="=viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title></title>
+    <link href="StyleSheet1.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Dosis:300,400,500,600,700">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="section-title">
+            <h3>柴犬総選挙</h3>
+        </div>
+        <div class="section-content">
+            <p class="call-to-action">好きな色の柴犬をクリック！</p>
+            <div class="option-wrapper">
+                <div class="option-group">
+                    <img class="option-image" src="akaShiba.jpg">
+                    <div class="option-btn" data-option="1">1. 赤柴</div>
+                </div>
+                <div class="option-group">
+                    <img class="option-image" src="whiteShiba.jpg">
+                    <div class="option-btn" data-option="2">2. 白柴</div>
+                </div>
+                <div class="option-group">
+                    <img class="option-image" src="kuroShiba.jpg">
+                    <div class="option-btn" data-option="3">3. 黒柴</div>
+                </div>
+            </div>
+           
+
+            <form id="form" class="form">
+                <div class="form-group">
+                    <div>柴犬：</div>
+                    <select id="select-form" class="select-form">
+                        <option value="0">選択してください</option>
+                        <option value="1">1. 赤柴</option>
+                        <option value="2">2. 白柴</option>
+                        <option value="3">3. 黒柴</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <p id="error-message" class="error-message"></p>
+                    <div>理由：</div>
+                    <textarea id="text-form" class="text-form"></textarea>
+                </div>
+                <button type="button" class="btn btn-primary">送信</button>
+            </form>
+            <div class="output-wrapper">
+                <h4>結果</h4>
+                <div class="output-inner">
+                    <p class="output-item">好きなキャラクター：<span id="output-select"></span></p>
+                    <p class="output-item">理由：<span id="output-text"></span></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="Script1.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+</html>
