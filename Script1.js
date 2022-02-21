@@ -1,4 +1,4 @@
-// JavaScript source code
+ï»¿// JavaScript source code
 
 $(function () {
 
@@ -8,7 +8,7 @@ $(function () {
 
         let clickedOption = $(this).attr("data-option");
 
-        $("#text-form").val(optionText + "‚ªD‚«‚È——R‚Í");
+        $("#text-form").val(optionText + "ãŒå¥½ããªç†ç”±ã¯");
         $("#select-form").val(clickedOption);
     });
 
@@ -16,7 +16,7 @@ $(function () {
         let selectItem = $("#select-form").val();
         let textItem = $("#text-form").val();
         if (textItem == "") {
-            $("#error-message").text("——R‚ğ‹L“ü‚µ‚Ä‚­‚¾‚³‚¢");
+            $("#error-message").text("ç†ç”±ã‚’è¨˜å…¥ã—ã¦ãã ã•ã„");
         } else {
             $("#error-message").text("");
         }
